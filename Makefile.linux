@@ -26,7 +26,7 @@ debug:
 	gdb ./$(TARGET)
 
 exe:
-	./$(TARGET)
+	./$(TARGET) install -O2 -lm -t ./data/Hello.txt --version
 
 clean:
 	rm -rf $(BUILD_DIR)/*
